@@ -9,11 +9,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "aws-sdk": "^2.1091.0",
     "serverless-iam-roles-per-function": "^3.2.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.1091.0",
-    "jimp": "^0.16.1",
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "^13.5.1",
     "uuid": "^8.3.2"
   }
 }
