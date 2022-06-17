@@ -27,7 +27,7 @@ module.exports.handler = async (event, context, callback) => {
   await page.goto(domainUrl || "https://example.com", {
     waitUntil: "networkidle0",
   });
-  const buffer = await page.screenshot();
+  const buffer = await page.screenshot({ fullPage: true });
   await page.close();
   await browser.close();
 

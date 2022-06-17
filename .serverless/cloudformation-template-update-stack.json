@@ -168,7 +168,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/S3UploadImage/dev/1647154903539-2022-03-13T07:01:43.539Z/S3UploadImage.zip"
+          "S3Key": "serverless/S3UploadImage/dev/1655470669030-2022-06-17T12:57:49.030Z/S3UploadImage.zip"
         },
         "Handler": "src/upload.handler",
         "Runtime": "nodejs12.x",
@@ -191,14 +191,14 @@
         "UploadScreenshotImageLogGroup"
       ]
     },
-    "UploadScreenshotImageLambdaVersionMPe9w59PuL1ALNXLXe6ZW0tnfhtPxU9KnlQezHa1Gw": {
+    "UploadScreenshotImageLambdaVersionO93cRUmsjesbiS3nVjDqe4LujOHmAvzmJuWCOiGQj0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UploadScreenshotImageLambdaFunction"
         },
-        "CodeSha256": "4kgn8mbhzgVOVTLZgD2vhprm7KKMHczfxAqTjBqCzQI="
+        "CodeSha256": "KGzTYjDR3ofD56fVtVM0DrkjJI/acu27UDdTUHJIRDc="
       }
     },
     "ApiGatewayRestApi": {
@@ -319,7 +319,7 @@
         "UploadScreenshotImageLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1647154900095": {
+    "ApiGatewayDeployment1655470665702": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -388,7 +388,7 @@
     "UploadScreenshotImageLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UploadScreenshotImageLambdaVersionMPe9w59PuL1ALNXLXe6ZW0tnfhtPxU9KnlQezHa1Gw"
+        "Ref": "UploadScreenshotImageLambdaVersionO93cRUmsjesbiS3nVjDqe4LujOHmAvzmJuWCOiGQj0"
       },
       "Export": {
         "Name": "sls-S3UploadImage-dev-UploadScreenshotImageLambdaFunctionQualifiedArn"
